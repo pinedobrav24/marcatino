@@ -8,7 +8,7 @@
     <?php wp_head(); ?> <!--inserta funciones de edtores y permite incluir scripts y estilos-->
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <header class="header">
         <div class="contenedor barra-navegacion">
             <div class="logo">

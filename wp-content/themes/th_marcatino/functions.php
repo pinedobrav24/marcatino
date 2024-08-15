@@ -1,5 +1,17 @@
 <?php
 
+// configuraciones adicionales
+
+function tm_setup()
+{
+    //imagen destacada
+    add_theme_support('post-thumbnails');
+
+    //titulos para SEO
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'tm_setup');
 //agregando menus
 
 function tm_menus()

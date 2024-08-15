@@ -15,7 +15,7 @@
 :root {
   /* ---------- FUENTE --------*/
 
-  --fuente-principal: "Tilillium Web", sans-serif;
+  --fuente-principal: "Titillium Web", sans-serif;
   --fuente-headings: "Russo One", sans-serif;
 
   /* ---------COLORES-----------*/
@@ -219,5 +219,87 @@ img {
   .menu-principal li a:hover::after {
     transform: scaleY(1);
     opacity: 1;
+  }
+}
+
+/*------------ FOOTER -------------*/
+
+.footer {
+  background: linear-gradient(rgb(43 45 66 / 0.85), rgb(43 45 66 / 0.85)),
+    url(images/fondo1.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--blanco);
+}
+
+.footer .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .logo img {
+  width: 20rem;
+  margin: 0 auto 2rem auto;
+}
+
+.footer .redes-sociales {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.footer .redes-sociales a {
+  color: var(--blanco);
+  padding: 0 2rem;
+  font-size: 3rem;
+}
+
+.contacto ul {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contacto li {
+  margin-bottom: 5rem;
+}
+
+.contacto li:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacto li i {
+  font-size: 4rem;
+  color: var(--primario);
+}
+
+@media (min-width: 768px) {
+  .contenido-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacto ul {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .contacto li {
+    grid-gap: 2rem;
+    margin: 1rem auto;
+    display: flex;
+    text-align: left;
+    width: min(90%, 90rem);
   }
 }
