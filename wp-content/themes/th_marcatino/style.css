@@ -303,3 +303,124 @@ img {
     width: min(90%, 90rem);
   }
 }
+
+/* ---------BREADCRUMBS----------*/
+
+ul.breadcrumbs li {
+  display: inline;
+}
+
+ul.breadcrumbs li a {
+  color: var(--primario);
+}
+
+ul.breadcrumbs li a:hover {
+  text-decoration: underline;
+}
+
+ul.breadcrumbs .separator {
+  margin: 0 5px;
+  color: var(--blanco);
+}
+
+/*-----------CABECERA------------*/
+
+.cabecera {
+  background: linear-gradient(rgb(0 0 0 /0.65), rgb(0 0 0 /0.65)),
+    url(images/fondo-cabecera2.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0;
+  color: var(--primario);
+  height: 20rem;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabecera h1 {
+  margin: 1rem auto;
+}
+
+/*-------------CONTACTO----------*/
+
+.wpcf7-form {
+  padding: 2rem;
+  width: 60rem;
+  background-color: var(--fondo-claro);
+  border-radius: 0.5rem;
+  padding: 5rem;
+}
+.wpcf7-form label {
+  font-weight: 700;
+}
+
+.wpcf7-form .wpcf7-form-control {
+  width: 100%;
+  border: 1px solid var(--gris-claro);
+  padding: 1rem;
+}
+
+.wpcf7-form .wpcf7-submit {
+  background-color: var(--primario);
+  font-size: 2rem;
+  font-family: var(--fuente-headings);
+  padding: 1.2rem;
+  color: var(--blanco);
+}
+
+.wpcf7-form .wpcf7-submit:hover {
+  cursor: pointer;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+  background-color: rgb(156, 7, 7);
+  color: var(--blanco);
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+}
+
+.wpcf7-form .wpcf7-spinner {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: var(--primario);
+  opacity: 1;
+}
+
+.contenido-contacto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-local .datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dato {
+  background-color: var(--fondo-claro);
+  border-radius: 0.5rem;
+  padding: 2rem 2rem 15rem 2rem;
+  max-width: 32rem;
+  margin-bottom: 4rem;
+  height: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.dato-texto h4 {
+  margin-bottom: 0.5rem;
+}
+.icono i {
+  color: var(--primario);
+  font-size: 6rem;
+}
+
+.dato:last-of-type {
+  margin-bottom: 2rem;
+}
